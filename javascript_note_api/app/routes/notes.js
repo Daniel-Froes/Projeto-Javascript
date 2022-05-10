@@ -21,7 +21,10 @@ router.get('/search', withAuth, async(req, res) => {
     const { query } = req.query;
 
     try {
-        let notes = await Note.find()
+        let notes = await Note
+            .find({ author: req.user._id})
+            .find({ $text: { $search: query }});
+        res.json(notes)
     } catch (error) {
         res.json({error: error}).status(500)
         
