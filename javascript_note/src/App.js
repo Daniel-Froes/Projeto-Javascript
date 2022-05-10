@@ -1,10 +1,10 @@
 import React,{ Fragment} from 'react';
 import './App.scss';
-import Header from './components/header';
+import RoutesPath from './routes'
 
 const App = () => (
   <Fragment>
-    <Header/>
+    <RoutesPath/>
   </Fragment>
   
     
