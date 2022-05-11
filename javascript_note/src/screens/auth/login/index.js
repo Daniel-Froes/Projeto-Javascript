@@ -16,7 +16,6 @@ const LoginScreen = () => (
             <Column size={3}>
               <Card>
                 <Card.Content>
-                  <Section>
                     <Column.Group centered>
                       <Column size={12}>
                         <img src={logoImage} alt="logoImage" />
@@ -32,7 +31,6 @@ const LoginScreen = () => (
                         
                       </Column>
                     </Column.Group>
-                  </Section>
                   <LoginForm/>
                 </Card.Content>
               </Card>
